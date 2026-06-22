@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Selektywnie usuwa niekorzystne efekty olejów do broni, zachowuje efekty pozytywne i przekreśla usunięte wiersze opisu."
+    },
+    {
+      "key": "section.General",
+      "value": "Ogólne"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Niekorzystne efekty"
+    },
+    {
+      "key": "section.Display",
+      "value": "Wyświetlanie"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Debugowanie"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Włącz mod"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Włącza Perfect Oils. Poszczególne niekorzystne efekty można wybrać w odpowiedniej sekcji."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Usuń dodatkowy koszt wytrzymałości"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Usuwa dodatkowe zużycie wytrzymałości broni powodowane przez oleje. Ta opcja jest niezależna od pozostałych efektów."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Przekreśl usunięte efekty"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Zachowuje oryginalne opisy olejów i przekreśla efekty aktualnie usuwane przez mod."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Szczegółowe logowanie"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Zapisuje każdy sklasyfikowany modyfikator oleju i wiersz podpowiedzi. Podczas normalnej gry pozostaw wyłączone."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Usuń blokadę celowania"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Usuwa efekty olejów, które uniemożliwiają celowanie przez przyrządy."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Usuń większy opad pocisku"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Usuwa zwiększoną grawitację pocisku oraz powiązane kary prędkości lub masy tego samego oleju."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Usuń większy opór"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Usuwa efekty olejów zwiększające opór pocisku."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Usuń szansę dodatkowego zużycia amunicji"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Usuwa efekty dające szansę zużycia dodatkowego naboju podczas strzału."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Usuń karę celności w ruchu"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Usuwa efekty obniżające celność podczas ruchu."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Usuń karę prędkości ruchu"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Usuwa efekty obniżające prędkość ruchu podczas trzymania broni."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Usuń karę siły skoku"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Usuwa efekty obniżające siłę skoku podczas trzymania broni."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Usuń karę szansy na łup"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Usuwa efekty obniżające mnożnik szansy na łup."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Usuń blokadę wypadania Sulf"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Usuwa efekty uniemożliwiające wrogom i obiektom zniszczalnym upuszczanie Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Usuń blokadę wypadania organów"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Usuwa efekty uniemożliwiające wrogom upuszczanie organów."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Usuń ujemną prędkość pocisku"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Usuwa modyfikatory prędkości tylko wtedy, gdy ją obniżają. Pozytywne efekty pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Usuń ujemne obrażenia"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Usuwa płaskie lub procentowe modyfikatory obrażeń tylko przy wartości ujemnej. Pozytywne efekty pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Usuń ujemny rozmiar pocisku"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Usuwa modyfikatory rozmiaru tylko wtedy, gdy zmniejszają pocisk. Pozytywne efekty pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Usuń ujemne RPM"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Usuwa modyfikatory szybkostrzelności tylko wtedy, gdy obniżają RPM. Pozytywne efekty pozostają aktywne."
+    }
+  ]
+}

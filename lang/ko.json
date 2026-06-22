@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "무기 오일의 불리한 효과만 선택적으로 제거하고 긍정 효과는 유지하며, 제거된 설명 줄에는 취소선을 표시합니다."
+    },
+    {
+      "key": "section.General",
+      "value": "일반"
+    },
+    {
+      "key": "section.Traits",
+      "value": "불리한 효과"
+    },
+    {
+      "key": "section.Display",
+      "value": "표시"
+    },
+    {
+      "key": "section.Debug",
+      "value": "디버그"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "모드 활성화"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Perfect Oils를 활성화합니다. 제거할 불리한 효과는 해당 섹션에서 개별 선택할 수 있습니다."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "추가 내구도 소모 제거"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "오일로 인해 추가되는 무기 내구도 소모를 제거합니다. 이 옵션은 다른 효과와 독립적입니다."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "제거된 효과에 취소선 표시"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "오일의 원래 설명은 유지하고 현재 모드가 제거한 효과에 취소선을 표시합니다."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "상세 로그"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "분류된 모든 오일 수정치와 툴팁 줄을 기록합니다. 일반 플레이 중에는 비활성화를 권장합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "조준 비활성화 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "정조준을 사용할 수 없게 만드는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "탄도 낙하 증가 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "투사체 중력 증가와 같은 오일에 포함된 속도 또는 질량 페널티를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "투사체 저항 증가 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "투사체 저항을 증가시키는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "추가 탄약 소모 확률 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "발사 시 탄약을 한 발 더 소모할 확률을 부여하는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "이동 중 정확도 페널티 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "이동 중 정확도를 낮추는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "이동 속도 페널티 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "무기를 들고 있을 때 이동 속도를 낮추는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "점프력 페널티 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "무기를 들고 있을 때 점프력을 낮추는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "전리품 확률 페널티 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "전리품 드롭 확률 배율을 낮추는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Sulf 드롭 비활성화 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "적과 파괴 가능한 물체가 Sulf를 드롭하지 못하게 하는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "장기 드롭 비활성화 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "적이 장기를 드롭하지 못하게 하는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "탄속 감소 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "탄속을 낮추는 수정치만 제거합니다. 탄속을 높이는 긍정 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "피해 감소 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "값이 음수인 고정 또는 백분율 피해 수정치만 제거합니다. 피해 증가 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "탄환 크기 감소 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "탄환 크기를 줄이는 수정치만 제거합니다. 크기 증가 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "연사력 감소 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "RPM을 낮추는 수정치만 제거합니다. 연사력을 높이는 효과는 유지됩니다."
+    }
+  ]
+}

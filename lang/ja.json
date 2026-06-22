@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "武器オイルの不利な効果だけを選択して無効化し、有利な効果を維持したまま、削除された説明行に取り消し線を表示します。"
+    },
+    {
+      "key": "section.General",
+      "value": "一般"
+    },
+    {
+      "key": "section.Traits",
+      "value": "不利な効果"
+    },
+    {
+      "key": "section.Display",
+      "value": "表示"
+    },
+    {
+      "key": "section.Debug",
+      "value": "デバッグ"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "MODを有効化"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Perfect Oilsを有効にします。無効化する効果は「不利な効果」セクションで個別に選択できます。"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "追加耐久度消費を削除"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "オイル固有の追加武器耐久度消費を削除します。この項目は他の不利な効果とは独立しています。"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "削除済み効果に取り消し線を表示"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "オイルの元の説明を残し、このMODで現在無効化されている効果に取り消し線を表示します。"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "詳細ログ"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "分類された各オイル補正とツールチップ行を記録します。通常プレイでは無効を推奨します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "エイム無効化を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "照準を覗く操作を無効化するオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "弾道落下増加を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "投射物の重力増加と、同じオイルに含まれる弾速または質量のペナルティを削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "投射物の抵抗増加を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "投射物の空気抵抗を増加させるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "追加弾薬消費確率を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "射撃時に追加で弾薬を1発消費する確率を付与するオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "移動中の精度低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "移動中の射撃精度を低下させるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "移動速度低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "武器所持中の移動速度を低下させるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "ジャンプ力低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "武器所持中のジャンプ力を低下させるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "ドロップ率低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "アイテムのドロップ率倍率を低下させるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Sulfドロップ無効化を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "敵や破壊可能オブジェクトからSulfが落ちなくなるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "臓器ドロップ無効化を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "敵から臓器が落ちなくなるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "弾速低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "弾速を低下させる補正だけを削除します。弾速を上げる有利な効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "ダメージ低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "値が負の固定値または割合ダメージ補正だけを削除します。ダメージを上げる効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "弾サイズ低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "弾のサイズを小さくする補正だけを削除します。サイズを大きくする効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "連射速度低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "RPMを低下させる補正だけを削除します。連射速度を上げる効果は維持されます。"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Remove seletivamente efeitos indesejáveis dos óleos de arma, preserva os efeitos positivos e risca as linhas removidas nas descrições."
+    },
+    {
+      "key": "section.General",
+      "value": "Geral"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Efeitos indesejáveis"
+    },
+    {
+      "key": "section.Display",
+      "value": "Exibição"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Depuração"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Ativar mod"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Ativa Perfect Oils. Cada efeito indesejável pode ser selecionado separadamente na seção correspondente."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Remover custo extra de durabilidade"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Remove o consumo adicional de durabilidade causado especificamente pelos óleos. Esta opção é independente dos outros efeitos."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Riscar efeitos removidos"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Mantém as descrições originais dos óleos e risca os efeitos atualmente removidos pelo mod."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Registro detalhado"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Registra cada modificador de óleo classificado e cada linha da descrição. Deixe desativado durante o jogo normal."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Remover bloqueio de mira"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Remove efeitos de óleo que impedem mirar pela mira da arma."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Remover maior queda de projétil"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Remove o aumento da gravidade do projétil e as penalidades relacionadas de velocidade ou massa do mesmo óleo."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Remover maior arrasto"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Remove efeitos de óleo que aumentam o arrasto do projétil."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Remover chance de consumo extra de munição"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Remove efeitos que podem consumir uma munição adicional ao disparar."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Remover penalidade de precisão em movimento"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Remove efeitos que reduzem a precisão durante o movimento."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Remover penalidade de velocidade de movimento"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Remove efeitos que reduzem a velocidade de movimento ao segurar a arma."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Remover penalidade de força do salto"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Remove efeitos que reduzem a força do salto ao segurar a arma."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Remover penalidade de chance de saque"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Remove efeitos que reduzem o multiplicador da chance de saque."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Remover bloqueio de drops de Sulf"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Remove efeitos que impedem inimigos e objetos quebráveis de soltar Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Remover bloqueio de drops de órgãos"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Remove efeitos que impedem inimigos de soltar órgãos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Remover velocidade negativa de projétil"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Remove modificadores de velocidade apenas quando reduzem a velocidade. Efeitos positivos permanecem ativos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Remover dano negativo"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Remove modificadores fixos ou percentuais de dano apenas quando o valor é negativo. Efeitos positivos permanecem ativos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Remover tamanho negativo de projétil"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Remove modificadores de tamanho apenas quando reduzem o projétil. Efeitos positivos permanecem ativos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Remover RPM negativo"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Remove modificadores de cadência apenas quando reduzem o RPM. Efeitos positivos permanecem ativos."
+    }
+  ]
+}

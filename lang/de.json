@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Entfernt ausgewählte nachteilige Waffenöl-Effekte, behält positive Effekte bei und markiert entfernte Tooltip-Zeilen durchgestrichen."
+    },
+    {
+      "key": "section.General",
+      "value": "Allgemein"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Nachteilige Effekte"
+    },
+    {
+      "key": "section.Display",
+      "value": "Anzeige"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Debug"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Mod aktivieren"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Aktiviert Perfect Oils. Einzelne nachteilige Effekte können im Abschnitt „Nachteilige Effekte“ ausgewählt werden."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Zusätzlichen Haltbarkeitsverbrauch entfernen"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Entfernt den zusätzlichen Waffenhaltbarkeitsverbrauch, der speziell durch Öle verursacht wird. Diese Option ist unabhängig von den übrigen Effekten."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Entfernte Effekte durchstreichen"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Behält die ursprünglichen Öl-Beschreibungen bei und streicht Effekte durch, die derzeit von diesem Mod entfernt werden."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Detaillierte Protokollierung"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Protokolliert jeden klassifizierten Öl-Modifikator und jede Tooltip-Zeile. Im normalen Spiel deaktiviert lassen."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Deaktiviertes Zielen entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Entfernt Öl-Effekte, die das Zielen über Visier deaktivieren."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Stärkeren Geschossabfall entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Entfernt erhöhte Projektilgravitation sowie zugehörige Geschwindigkeits- oder Massenstrafen desselben Öls."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Mehr Luftwiderstand entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Entfernt Öl-Effekte, die den Projektilwiderstand erhöhen."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Chance auf zusätzlichen Munitionsverbrauch entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Entfernt Öl-Effekte, die beim Schießen eine Chance auf den Verbrauch einer zusätzlichen Patrone geben."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Genauigkeitsstrafe in Bewegung entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Entfernt Öl-Effekte, die die Genauigkeit während der Bewegung verringern."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Bewegungstempo-Strafe entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Entfernt Öl-Effekte, die das Bewegungstempo beim Halten der Waffe verringern."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Sprungkraft-Strafe entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Entfernt Öl-Effekte, die die Sprungkraft beim Halten der Waffe verringern."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Beutechancen-Strafe entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Entfernt Öl-Effekte, die den Multiplikator der Beutechance verringern."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Deaktivierte Sulf-Drops entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Entfernt Öl-Effekte, die Sulf-Drops von Gegnern und zerstörbaren Objekten verhindern."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Deaktivierte Organ-Drops entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Entfernt Öl-Effekte, die Organ-Drops von Gegnern verhindern."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Negative Geschossgeschwindigkeit entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Entfernt Geschossgeschwindigkeitsmodifikatoren nur, wenn sie die Geschwindigkeit senken. Positive Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Negativen Schaden entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Entfernt flache oder prozentuale Schadensmodifikatoren nur bei negativem Wert. Positive Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Negative Geschossgröße entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Entfernt Größenmodifikatoren nur, wenn sie Geschosse verkleinern. Positive Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Negative Feuerrate entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Entfernt Feuerratenmodifikatoren nur, wenn sie die RPM senken. Positive Effekte bleiben aktiv."
+    }
+  ]
+}

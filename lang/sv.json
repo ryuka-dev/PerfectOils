@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Tar selektivt bort oönskade effekter från vapenoljor, behåller positiva effekter och stryker över borttagna rader i beskrivningen."
+    },
+    {
+      "key": "section.General",
+      "value": "Allmänt"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Oönskade effekter"
+    },
+    {
+      "key": "section.Display",
+      "value": "Visning"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Felsökning"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Aktivera modden"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Aktiverar Perfect Oils. Varje oönskad effekt kan väljas separat i motsvarande avsnitt."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Ta bort extra hållbarhetskostnad"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Tar bort extra förbrukning av vapnets hållbarhet som orsakas av oljor. Inställningen är oberoende av övriga effekter."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Stryk över borttagna effekter"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Behåller oljornas ursprungliga beskrivningar och stryker över effekter som modden för närvarande tar bort."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Detaljerad loggning"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Loggar varje klassificerad oljemodifierare och tooltip-rad. Låt vara avstängd under normalt spel."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Ta bort inaktiverad siktning"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Tar bort oljeeffekter som förhindrar siktning genom vapnets sikte."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Ta bort ökat kulfall"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Tar bort ökad projektilgravitation och relaterade hastighets- eller massastraff från samma olja."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Ta bort ökat luftmotstånd"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Tar bort oljeeffekter som ökar projektilens luftmotstånd."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Ta bort chans till extra ammunitionsförbrukning"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Tar bort effekter som kan förbruka en extra patron vid avfyrning."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Ta bort träffsäkerhetsstraff i rörelse"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Tar bort effekter som minskar träffsäkerheten under rörelse."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Ta bort rörelsehastighetsstraff"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Tar bort effekter som minskar rörelsehastigheten när vapnet hålls."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Ta bort hoppkraftsstraff"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Tar bort effekter som minskar hoppkraften när vapnet hålls."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Ta bort straff för byteschans"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Tar bort effekter som minskar multiplikatorn för byteschans."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Ta bort blockerade Sulf-droppar"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Tar bort effekter som hindrar fiender och förstörbara objekt från att släppa Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Ta bort blockerade organdroppar"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Tar bort effekter som hindrar fiender från att släppa organ."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Ta bort negativ kulhastighet"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Tar bort hastighetsmodifierare endast när de sänker hastigheten. Positiva effekter förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Ta bort negativ skada"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Tar bort fasta eller procentuella skademodifierare endast när värdet är negativt. Positiva effekter förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Ta bort negativ kulstorlek"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Tar bort storleksmodifierare endast när de minskar kulan. Positiva effekter förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Ta bort negativ RPM"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Tar bort eldhastighetsmodifierare endast när de sänker RPM. Positiva effekter förblir aktiva."
+    }
+  ]
+}

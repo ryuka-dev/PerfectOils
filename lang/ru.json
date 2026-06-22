@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Выборочно убирает нежелательные эффекты оружейных масел, сохраняет положительные эффекты и зачёркивает удалённые строки описания."
+    },
+    {
+      "key": "section.General",
+      "value": "Общие"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Нежелательные эффекты"
+    },
+    {
+      "key": "section.Display",
+      "value": "Отображение"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Отладка"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Включить мод"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Включает Perfect Oils. Каждый нежелательный эффект можно выбрать отдельно в соответствующем разделе."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Убрать дополнительный расход прочности"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Убирает дополнительный расход прочности оружия, вызванный маслами. Эта настройка не зависит от остальных эффектов."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Зачёркивать удалённые эффекты"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Сохраняет оригинальные описания масел и зачёркивает эффекты, которые в данный момент отключены модом."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Подробное журналирование"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Записывает каждый распознанный модификатор масла и строку подсказки. Для обычной игры оставьте выключенным."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Убрать запрет прицеливания"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Убирает эффекты масел, запрещающие прицеливание через прицел."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Убрать усиленное падение пули"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Убирает повышенную гравитацию снаряда и связанные штрафы скорости или массы того же масла."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Убрать повышенное сопротивление"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Убирает эффекты масел, увеличивающие сопротивление снаряда."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Убрать шанс дополнительного расхода патрона"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Убирает эффекты, дающие шанс потратить дополнительный патрон при выстреле."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Убрать штраф точности в движении"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Убирает эффекты, снижающие точность во время движения."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Убрать штраф скорости передвижения"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Убирает эффекты, снижающие скорость движения при удержании оружия."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Убрать штраф силы прыжка"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Убирает эффекты, снижающие силу прыжка при удержании оружия."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Убрать штраф шанса добычи"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Убирает эффекты, снижающие множитель шанса выпадения добычи."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Убрать запрет выпадения Sulf"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Убирает эффекты, запрещающие врагам и разрушаемым объектам ронять Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Убрать запрет выпадения органов"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Убирает эффекты, запрещающие врагам ронять органы."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Убрать отрицательную скорость пули"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Убирает модификаторы скорости только при её снижении. Положительные эффекты остаются активными."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Убрать отрицательный урон"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Убирает плоские и процентные модификаторы урона только при отрицательном значении. Положительные эффекты сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Убрать отрицательный размер пули"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Убирает модификаторы размера только при уменьшении пули. Положительные эффекты сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Убрать отрицательную скорострельность"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Убирает модификаторы скорострельности только при снижении RPM. Положительные эффекты сохраняются."
+    }
+  ]
+}

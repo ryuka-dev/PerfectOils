@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Selectively removes undesirable weapon-oil effects while preserving positive effects and marking removed tooltip lines with strikethrough."
+    },
+    {
+      "key": "section.General",
+      "value": "General"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Undesirable Traits"
+    },
+    {
+      "key": "section.Display",
+      "value": "Display"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Debug"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Enable Mod"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Enable Perfect Oils. Individual undesirable traits can be selected in the Undesirable Traits section."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Remove Extra Durability Cost"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Remove extra weapon durability consumption caused specifically by oils. This option is independent of the other traits."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Show Removed Traits with Strikethrough"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Keep the original oil descriptions and draw a strikethrough over effects currently removed by this mod."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Detailed Logging"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Log every classified oil modifier and tooltip line. Leave disabled during normal play."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Remove Disable Aiming"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Remove oil effects that disable aiming down sights."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Remove More Bullet Drop"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Remove increased projectile gravity and related speed or mass penalties from the same oil."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Remove More Drag"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Remove oil effects that increase projectile drag."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Remove Extra Ammo Consumption Chance"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Remove oil effects that add a chance to consume one extra round when firing."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Remove Moving Accuracy Penalty"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Remove oil effects that reduce accuracy while moving."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Remove Movement Speed Penalty"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Remove oil effects that reduce movement speed while holding the weapon."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Remove Jump Power Penalty"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Remove oil effects that reduce jump power while holding the weapon."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Remove Loot Chance Penalty"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Remove oil effects that reduce the loot drop chance multiplier."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Remove Disabled Money Drops"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Remove oil effects that prevent enemies and breakables from dropping Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Remove Disabled Organ Drops"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Remove oil effects that prevent enemies from dropping organs."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Remove Negative Bullet Speed"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Remove bullet-speed modifiers only when they reduce speed. Positive bullet-speed effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Remove Negative Damage"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Remove flat or percentage damage modifiers only when their value is negative. Positive damage effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Remove Negative Bullet Size"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Remove bullet-size modifiers only when they reduce size. Positive bullet-size effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Remove Negative RPM"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Remove fire-rate modifiers only when they reduce RPM. Positive fire-rate effects remain active."
+    }
+  ]
+}

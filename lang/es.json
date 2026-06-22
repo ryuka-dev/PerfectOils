@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Elimina de forma selectiva efectos negativos de los aceites de armas, conserva los positivos y tacha las líneas eliminadas en la descripción."
+    },
+    {
+      "key": "section.General",
+      "value": "General"
+    },
+    {
+      "key": "section.Traits",
+      "value": "Efectos negativos"
+    },
+    {
+      "key": "section.Display",
+      "value": "Visualización"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Depuración"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Activar mod"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Activa Perfect Oils. Los efectos negativos pueden seleccionarse individualmente en su sección."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Eliminar coste extra de durabilidad"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Elimina el consumo adicional de durabilidad causado específicamente por los aceites. Esta opción es independiente de los demás efectos."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Tachar efectos eliminados"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Conserva las descripciones originales de los aceites y tacha los efectos que este mod elimina actualmente."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Registro detallado"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Registra cada modificador de aceite clasificado y cada línea de descripción. Déjalo desactivado durante el juego normal."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Eliminar bloqueo de apuntado"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Elimina los efectos de aceite que impiden apuntar con la mira."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Eliminar mayor caída de bala"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Elimina el aumento de gravedad del proyectil y las penalizaciones relacionadas de velocidad o masa del mismo aceite."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Eliminar mayor resistencia"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Elimina los efectos de aceite que aumentan la resistencia del proyectil."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Eliminar probabilidad de consumo extra de munición"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Elimina los efectos que pueden consumir una bala adicional al disparar."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Eliminar penalización de precisión al moverse"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Elimina los efectos que reducen la precisión mientras te mueves."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Eliminar penalización de velocidad de movimiento"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Elimina los efectos que reducen la velocidad de movimiento al sostener el arma."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Eliminar penalización de salto"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Elimina los efectos que reducen la potencia de salto al sostener el arma."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Eliminar penalización de probabilidad de botín"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Elimina los efectos que reducen el multiplicador de probabilidad de botín."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Eliminar bloqueo de botín de Sulf"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Elimina los efectos que impiden que enemigos y objetos rompibles suelten Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Eliminar bloqueo de órganos"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Elimina los efectos que impiden que los enemigos suelten órganos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Eliminar velocidad de bala negativa"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Elimina modificadores de velocidad solo cuando la reducen. Los efectos positivos permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Eliminar daño negativo"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Elimina modificadores planos o porcentuales de daño solo cuando su valor es negativo. Los positivos permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Eliminar tamaño de bala negativo"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Elimina modificadores de tamaño solo cuando reducen la bala. Los efectos positivos permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Eliminar RPM negativo"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Elimina modificadores de cadencia solo cuando reducen las RPM. Los efectos positivos permanecen activos."
+    }
+  ]
+}

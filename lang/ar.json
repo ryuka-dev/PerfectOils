@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "يزيل بشكل انتقائي التأثيرات غير المرغوبة لزيوت الأسلحة، مع إبقاء التأثيرات الإيجابية ووضع خط على سطور الوصف التي تمت إزالتها."
+    },
+    {
+      "key": "section.General",
+      "value": "عام"
+    },
+    {
+      "key": "section.Traits",
+      "value": "التأثيرات غير المرغوبة"
+    },
+    {
+      "key": "section.Display",
+      "value": "العرض"
+    },
+    {
+      "key": "section.Debug",
+      "value": "التصحيح"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "تفعيل الإضافة"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "يفعّل Perfect Oils. يمكن اختيار كل تأثير غير مرغوب فيه بشكل مستقل من القسم المخصص."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "إزالة تكلفة المتانة الإضافية"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "يزيل الاستهلاك الإضافي لمتانة السلاح الناتج عن الزيوت تحديدًا. هذا الخيار مستقل عن بقية التأثيرات."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "وضع خط على التأثيرات المُزالة"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "يبقي أوصاف الزيوت الأصلية ويضع خطًا على التأثيرات التي تزيلها الإضافة حاليًا."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "السجل التفصيلي"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "يسجل كل مُعدّل زيت مصنّف وكل سطر في التلميح. يُفضّل إبقاؤه معطلًا أثناء اللعب العادي."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "إزالة تعطيل التصويب"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "يزيل تأثيرات الزيوت التي تمنع التصويب عبر المنظار."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "إزالة زيادة سقوط المقذوف"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "يزيل زيادة جاذبية المقذوف وعقوبات السرعة أو الكتلة المرتبطة بها في الزيت نفسه."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "إزالة زيادة مقاومة المقذوف"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "يزيل تأثيرات الزيوت التي تزيد مقاومة المقذوف أثناء الحركة."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "إزالة احتمال استهلاك ذخيرة إضافية"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "يزيل التأثيرات التي تضيف احتمال استهلاك طلقة إضافية عند الإطلاق."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "إزالة عقوبة الدقة أثناء الحركة"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "يزيل التأثيرات التي تقلل الدقة أثناء الحركة."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "إزالة عقوبة سرعة الحركة"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "يزيل التأثيرات التي تقلل سرعة الحركة أثناء حمل السلاح."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "إزالة عقوبة قوة القفز"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "يزيل التأثيرات التي تقلل قوة القفز أثناء حمل السلاح."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "إزالة عقوبة فرصة الغنائم"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "يزيل التأثيرات التي تقلل مضاعف فرصة سقوط الغنائم."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "إزالة تعطيل سقوط Sulf"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "يزيل التأثيرات التي تمنع الأعداء والأجسام القابلة للكسر من إسقاط Sulf."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "إزالة تعطيل سقوط الأعضاء"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "يزيل التأثيرات التي تمنع الأعداء من إسقاط الأعضاء."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "إزالة سرعة المقذوف السلبية"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "يزيل مُعدّلات السرعة فقط عندما تقلل سرعة المقذوف. تبقى التأثيرات الإيجابية فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "إزالة الضرر السلبي"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "يزيل مُعدّلات الضرر الثابتة أو النسبية فقط عندما تكون قيمتها سالبة. تبقى التأثيرات الإيجابية فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "إزالة حجم المقذوف السلبي"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "يزيل مُعدّلات الحجم فقط عندما تصغّر المقذوف. تبقى التأثيرات الإيجابية فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "إزالة RPM السلبية"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "يزيل مُعدّلات معدل الإطلاق فقط عندما تقلل RPM. تبقى التأثيرات الإيجابية فعالة."
+    }
+  ]
+}

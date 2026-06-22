@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "按需移除武器魔油的负面效果，保留正面效果，并用删除线标出已被移除的说明。"
+    },
+    {
+      "key": "section.General",
+      "value": "常规"
+    },
+    {
+      "key": "section.Traits",
+      "value": "负面效果"
+    },
+    {
+      "key": "section.Display",
+      "value": "显示"
+    },
+    {
+      "key": "section.Debug",
+      "value": "调试"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "启用 Mod"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "启用 Perfect Oils。可以在“负面效果”分区中分别选择要移除的效果。"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "移除额外耐久消耗"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "移除魔油额外造成的武器耐久消耗。此选项独立于其他负面效果。"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "为已移除效果显示删除线"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "保留魔油的原版说明，并为当前被本 Mod 移除的效果添加删除线。"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "详细日志"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "记录每条被分类的魔油修改和悬浮信息行。正常游玩时建议关闭。"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "移除禁用瞄准"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "移除会禁止开镜瞄准的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "移除弹道下坠增加"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "移除弹丸重力增加，以及同一魔油附带的弹速或质量惩罚。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "移除弹丸阻力增加"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "移除会增加弹丸飞行阻力的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "移除额外弹药消耗概率"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "移除射击时有概率额外消耗一发弹药的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "移除移动时精度惩罚"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "移除移动时降低射击精度的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "移除移动速度惩罚"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "移除持有武器时降低移动速度的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "移除跳跃力惩罚"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "移除持有武器时降低跳跃力的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "移除掉落概率惩罚"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "移除会降低物品掉落概率倍率的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "移除禁用金钱掉落"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "移除会阻止敌人和可破坏物掉落 Sulf 的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "移除禁用器官掉落"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "移除会阻止敌人掉落器官的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "移除负面弹速"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "仅移除降低弹速的修改。提高弹速的正面效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "移除负面伤害"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "仅移除数值为负的固定或百分比伤害修改。提高伤害的正面效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "移除负面弹丸尺寸"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "仅移除缩小弹丸尺寸的修改。增大弹丸尺寸的正面效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "移除负面射速"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "仅移除降低 RPM 的射速修改。提高射速的正面效果仍会生效。"
+    }
+  ]
+}

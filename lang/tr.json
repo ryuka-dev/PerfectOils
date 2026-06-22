@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "key": "plugin.name",
+      "value": "Perfect Oils"
+    },
+    {
+      "key": "plugin.description",
+      "value": "Silah yağlarının istenmeyen etkilerini seçerek kaldırır, olumlu etkileri korur ve kaldırılan açıklama satırlarının üzerini çizer."
+    },
+    {
+      "key": "section.General",
+      "value": "Genel"
+    },
+    {
+      "key": "section.Traits",
+      "value": "İstenmeyen etkiler"
+    },
+    {
+      "key": "section.Display",
+      "value": "Görünüm"
+    },
+    {
+      "key": "section.Debug",
+      "value": "Hata ayıklama"
+    },
+    {
+      "key": "entry.General.Enabled.name",
+      "value": "Modu etkinleştir"
+    },
+    {
+      "key": "entry.General.Enabled.description",
+      "value": "Perfect Oils'i etkinleştirir. Her istenmeyen etki ilgili bölümden ayrı ayrı seçilebilir."
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.name",
+      "value": "Ek dayanıklılık maliyetini kaldır"
+    },
+    {
+      "key": "entry.General.RemoveExtraDurabilityCost.description",
+      "value": "Yağların özel olarak neden olduğu ek silah dayanıklılığı tüketimini kaldırır. Bu seçenek diğer etkilerden bağımsızdır."
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.name",
+      "value": "Kaldırılan etkilerin üzerini çiz"
+    },
+    {
+      "key": "entry.Display.ShowRemovedTraitsWithStrikethrough.description",
+      "value": "Yağların özgün açıklamalarını korur ve modun şu anda kaldırdığı etkilerin üzerini çizer."
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.name",
+      "value": "Ayrıntılı günlük"
+    },
+    {
+      "key": "entry.Debug.DetailedLogging.description",
+      "value": "Sınıflandırılan her yağ değiştiricisini ve araç ipucu satırını kaydeder. Normal oyunda kapalı bırakın."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.name",
+      "value": "Nişan almayı engelleme etkisini kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableAiming.description",
+      "value": "Nişangâhtan nişan almayı devre dışı bırakan yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.name",
+      "value": "Artan mermi düşüşünü kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreBulletDrop.description",
+      "value": "Artan mermi yerçekimini ve aynı yağdaki ilişkili hız veya kütle cezalarını kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.name",
+      "value": "Artan sürüklenmeyi kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreDrag.description",
+      "value": "Mermi sürüklenmesini artıran yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.name",
+      "value": "Ek mühimmat tüketme ihtimalini kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveExtraAmmoConsumeChance.description",
+      "value": "Ateş ederken fazladan bir mermi tüketme ihtimali ekleyen yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.name",
+      "value": "Hareket hâlinde isabet cezasını kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseAccuracyWhenMoving.description",
+      "value": "Hareket ederken isabet oranını düşüren yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.name",
+      "value": "Hareket hızı cezasını kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseMoveSpeed.description",
+      "value": "Silah tutulurken hareket hızını düşüren yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.name",
+      "value": "Zıplama gücü cezasını kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseJumpPower.description",
+      "value": "Silah tutulurken zıplama gücünü düşüren yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.name",
+      "value": "Ganimet şansı cezasını kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDecreaseLootChanceMultiplier.description",
+      "value": "Ganimet düşme şansı çarpanını azaltan yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.name",
+      "value": "Sulf düşmesini engelleme etkisini kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableMoneyDrops.description",
+      "value": "Düşmanların ve kırılabilir nesnelerin Sulf düşürmesini engelleyen yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.name",
+      "value": "Organ düşmesini engelleme etkisini kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveDisableOrganDrops.description",
+      "value": "Düşmanların organ düşürmesini engelleyen yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.name",
+      "value": "Negatif mermi hızını kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSpeed.description",
+      "value": "Hız değiştiricilerini yalnızca mermi hızını düşürdüklerinde kaldırır. Olumlu etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.name",
+      "value": "Negatif hasarı kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeDamage.description",
+      "value": "Sabit veya yüzdesel hasar değiştiricilerini yalnızca değerleri negatif olduğunda kaldırır. Olumlu etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.name",
+      "value": "Negatif mermi boyutunu kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeBulletSize.description",
+      "value": "Boyut değiştiricilerini yalnızca mermiyi küçülttüklerinde kaldırır. Olumlu etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.name",
+      "value": "Negatif RPM'yi kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeRpm.description",
+      "value": "Atış hızı değiştiricilerini yalnızca RPM'yi düşürdüklerinde kaldırır. Olumlu etkiler etkin kalır."
+    }
+  ]
+}
