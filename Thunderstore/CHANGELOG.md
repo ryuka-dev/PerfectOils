@@ -3,6 +3,7 @@
 ## 1.3.6
 
 * Added `RemoveNegativeMaxDurability`: oils that lower a weapon's maximum durability cap (for example -30% or a flat reduction) can now be suppressed. Positive max-durability bonuses are kept. Disabled by default.
+* Added `RemoveMoreRecoil`, `RemoveMoreSpread`, and `RemoveNegativeReloadSpeed`: the downside direction of the recoil (`KickMultiplier`), spread (`Spread`), and reload-speed (`ReloadSpeed`) stats can now be suppressed. Only the harmful direction is removed - recoil-reducing, accuracy-improving, and faster-reload modifiers are kept. All disabled by default.
 * Fixed trait toggles not taking effect until a reload: changing any suppression setting in-game now re-applies oil modifiers to the player's currently loaded items (equipped, backpack, paperdoll, and opened stashes) immediately, so already-oiled weapons update without re-oiling or restarting.
 * Extended the live update to the master `Enabled` switch as well as every per-trait toggle (previously only the durability-cost option updated live).
 

@@ -53,6 +53,9 @@ Classification lives in [`NegativeTraitPolicy.cs`](../NegativeTraitPolicy.cs).
 | NegativeBulletSize | `ProjectileScale` | value < 0 | off |
 | NegativeRpm | `RPM` | value < 0 | off |
 | NegativeMaxDurability | `MaxDurability` | value < 0 | off |
+| MoreRecoil | `KickMultiplier` | value > 0 (recoil = `KickMultiplier * KickPower`) | off |
+| MoreSpread | `Spread` | value > 0 (wider cone) | off |
+| NegativeReloadSpeed | `ReloadSpeed` | value < 0 (drives reload animation speed) | off |
 | ExtraDurabilityCost | `EnchantmentDurabilityCost` | value > 0 (handled via the durability flag, see below) | off |
 
 **Bullet drop note:** the visible "Bullet drop" tooltip row is *not* `ProjectileGravityFactor`

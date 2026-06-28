@@ -26,17 +26,23 @@ The following stronger stat-changing removals are available but default to disab
 - Negative Bullet Size
 - Negative RPM
 - Negative Max Durability
+- More Recoil
+- More Spread
+- Slower Reload
 - Extra Oil Durability Cost
 
-The signed-value rules only suppress modifiers that reduce the stat:
+The signed-value rules only suppress modifiers in the harmful direction:
 
 - `ProjectileTimeScale < 0`: negative bullet speed;
 - `Damage` or `DamageModifier < 0`: negative damage, for both Flat and percentage modifier types;
 - `ProjectileScale < 0`: negative bullet size;
 - `RPM < 0`: negative fire rate;
-- `MaxDurability < 0`: reduced maximum durability cap.
+- `MaxDurability < 0`: reduced maximum durability cap;
+- `KickMultiplier > 0`: more recoil;
+- `Spread > 0`: wider spread cone;
+- `ReloadSpeed < 0`: slower reload.
 
-Positive bullet-speed, damage, bullet-size, RPM, and max-durability modifiers remain active.
+Positive bullet-speed, damage, bullet-size, RPM, and max-durability modifiers, along with recoil-reducing, accuracy-improving, and faster-reload modifiers, remain active.
 
 `More Bullet Drop` also suppresses its same-oil reduced-speed or increased-mass companion modifiers. Because reduced projectile speed belongs to both categories, it is removed when either `RemoveMoreBulletDrop` or `RemoveNegativeBulletSpeed` is enabled.
 
@@ -115,6 +121,9 @@ Disabled by default:
 - `RemoveNegativeBulletSize = false`
 - `RemoveNegativeRpm = false`
 - `RemoveNegativeMaxDurability = false`
+- `RemoveMoreRecoil = false`
+- `RemoveMoreSpread = false`
+- `RemoveNegativeReloadSpeed = false`
 
 ### Display / Debug
 

@@ -19,6 +19,9 @@ namespace PerfectOils
         internal ConfigEntry<bool> RemoveNegativeBulletSize { get; private set; }
         internal ConfigEntry<bool> RemoveNegativeRpm { get; private set; }
         internal ConfigEntry<bool> RemoveNegativeMaxDurability { get; private set; }
+        internal ConfigEntry<bool> RemoveMoreRecoil { get; private set; }
+        internal ConfigEntry<bool> RemoveMoreSpread { get; private set; }
+        internal ConfigEntry<bool> RemoveNegativeReloadSpeed { get; private set; }
         internal ConfigEntry<bool> RemoveExtraDurabilityCost { get; private set; }
 
         internal TraitConfiguration(ConfigFile config)
@@ -113,6 +116,24 @@ namespace PerfectOils
                 false,
                 "Remove MaxDurability modifiers only when they lower the weapon's maximum durability cap. Positive max-durability bonuses remain active.");
 
+            RemoveMoreRecoil = config.Bind(
+                "Traits",
+                "RemoveMoreRecoil",
+                false,
+                "Remove KickMultiplier modifiers only when they increase recoil. Recoil-reducing modifiers remain active.");
+
+            RemoveMoreSpread = config.Bind(
+                "Traits",
+                "RemoveMoreSpread",
+                false,
+                "Remove Spread modifiers only when they widen the spread cone. Accuracy-improving modifiers remain active.");
+
+            RemoveNegativeReloadSpeed = config.Bind(
+                "Traits",
+                "RemoveNegativeReloadSpeed",
+                false,
+                "Remove ReloadSpeed modifiers only when they slow reloading. Faster-reload modifiers remain active.");
+
             // Keep the old section/key for backwards compatibility with v1.1.x configs.
             RemoveExtraDurabilityCost = config.Bind(
                 "General",
@@ -140,6 +161,9 @@ namespace PerfectOils
                 RemoveNegativeBulletSize,
                 RemoveNegativeRpm,
                 RemoveNegativeMaxDurability,
+                RemoveMoreRecoil,
+                RemoveMoreSpread,
+                RemoveNegativeReloadSpeed,
                 RemoveExtraDurabilityCost
             };
         }
@@ -161,6 +185,9 @@ namespace PerfectOils
                    IsEnabled(traits, NegativeOilTrait.NegativeBulletSize, RemoveNegativeBulletSize) ||
                    IsEnabled(traits, NegativeOilTrait.NegativeRpm, RemoveNegativeRpm) ||
                    IsEnabled(traits, NegativeOilTrait.NegativeMaxDurability, RemoveNegativeMaxDurability) ||
+                   IsEnabled(traits, NegativeOilTrait.MoreRecoil, RemoveMoreRecoil) ||
+                   IsEnabled(traits, NegativeOilTrait.MoreSpread, RemoveMoreSpread) ||
+                   IsEnabled(traits, NegativeOilTrait.NegativeReloadSpeed, RemoveNegativeReloadSpeed) ||
                    IsEnabled(traits, NegativeOilTrait.ExtraDurabilityCost, RemoveExtraDurabilityCost);
         }
 

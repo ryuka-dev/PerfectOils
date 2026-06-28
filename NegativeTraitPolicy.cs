@@ -26,7 +26,10 @@ namespace PerfectOils
         NegativeBulletSize = 1 << 12,
         NegativeRpm = 1 << 13,
         ExtraDurabilityCost = 1 << 14,
-        NegativeMaxDurability = 1 << 15
+        NegativeMaxDurability = 1 << 15,
+        MoreRecoil = 1 << 16,
+        MoreSpread = 1 << 17,
+        NegativeReloadSpeed = 1 << 18
     }
 
     internal static class NegativeTraitPolicy
@@ -155,6 +158,29 @@ namespace PerfectOils
                         ? NegativeOilTrait.ExtraDurabilityCost
                         : NegativeOilTrait.None;
 
+                case ItemAttributes.KickMultiplier:
+                    // KickMultiplier scales weapon recoil (KickMultiplier * KickPower).
+                    // Higher means more recoil, so only positive (worse) modifiers are
+                    // suppressed; "less recoil" oils use a negative value and are kept.
+                    return IncreasesAttribute(modifier)
+                        ? NegativeOilTrait.MoreRecoil
+                        : NegativeOilTrait.None;
+
+                case ItemAttributes.Spread:
+                    // Higher Spread means a wider, less accurate cone. Only positive
+                    // (worse) modifiers are suppressed; accuracy oils use a negative value.
+                    return IncreasesAttribute(modifier)
+                        ? NegativeOilTrait.MoreSpread
+                        : NegativeOilTrait.None;
+
+                case ItemAttributes.ReloadSpeed:
+                    // ReloadSpeed drives the reload animation speed (SetAnimatorSpeed).
+                    // Higher reloads faster, so only negative (slower) modifiers are
+                    // suppressed; faster-reload oils use a positive value and are kept.
+                    return DecreasesAttribute(modifier)
+                        ? NegativeOilTrait.NegativeReloadSpeed
+                        : NegativeOilTrait.None;
+
                 case ItemAttributes.MaxDurability:
                     // Oils that lower the weapon's maximum durability cap apply a
                     // negative MaxDurability modifier (e.g. -30% / -0.30 PercentAdd,
@@ -194,6 +220,9 @@ namespace PerfectOils
             AddName(names, traits, NegativeOilTrait.NegativeRpm, "Negative RPM");
             AddName(names, traits, NegativeOilTrait.ExtraDurabilityCost, "Extra Oil Durability Cost");
             AddName(names, traits, NegativeOilTrait.NegativeMaxDurability, "Negative Max Durability");
+            AddName(names, traits, NegativeOilTrait.MoreRecoil, "More Recoil");
+            AddName(names, traits, NegativeOilTrait.MoreSpread, "More Spread");
+            AddName(names, traits, NegativeOilTrait.NegativeReloadSpeed, "Slower Reload");
             return string.Join(" + ", names.ToArray());
         }
 
