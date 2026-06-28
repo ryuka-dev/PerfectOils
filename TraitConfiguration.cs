@@ -18,6 +18,7 @@ namespace PerfectOils
         internal ConfigEntry<bool> RemoveNegativeDamage { get; private set; }
         internal ConfigEntry<bool> RemoveNegativeBulletSize { get; private set; }
         internal ConfigEntry<bool> RemoveNegativeRpm { get; private set; }
+        internal ConfigEntry<bool> RemoveNegativeMaxDurability { get; private set; }
         internal ConfigEntry<bool> RemoveExtraDurabilityCost { get; private set; }
 
         internal TraitConfiguration(ConfigFile config)
@@ -106,12 +107,41 @@ namespace PerfectOils
                 false,
                 "Remove RPM modifiers only when their signed value is negative. Positive fire-rate modifiers remain active.");
 
+            RemoveNegativeMaxDurability = config.Bind(
+                "Traits",
+                "RemoveNegativeMaxDurability",
+                false,
+                "Remove MaxDurability modifiers only when they lower the weapon's maximum durability cap. Positive max-durability bonuses remain active.");
+
             // Keep the old section/key for backwards compatibility with v1.1.x configs.
             RemoveExtraDurabilityCost = config.Bind(
                 "General",
                 "RemoveExtraDurabilityCost",
                 false,
                 "Remove oil-specific extra durability consumption. This setting is independent from the other undesirable traits.");
+        }
+
+        internal ConfigEntry<bool>[] AllSettings()
+        {
+            return new[]
+            {
+                RemoveDisableAiming,
+                RemoveMoreBulletDrop,
+                RemoveMoreDrag,
+                RemoveExtraAmmoConsumeChance,
+                RemoveDecreaseAccuracyWhenMoving,
+                RemoveDecreaseMoveSpeed,
+                RemoveDecreaseJumpPower,
+                RemoveDecreaseLootChanceMultiplier,
+                RemoveDisableMoneyDrops,
+                RemoveDisableOrganDrops,
+                RemoveNegativeBulletSpeed,
+                RemoveNegativeDamage,
+                RemoveNegativeBulletSize,
+                RemoveNegativeRpm,
+                RemoveNegativeMaxDurability,
+                RemoveExtraDurabilityCost
+            };
         }
 
         internal bool ShouldRemove(NegativeOilTrait traits)
@@ -130,6 +160,7 @@ namespace PerfectOils
                    IsEnabled(traits, NegativeOilTrait.NegativeDamage, RemoveNegativeDamage) ||
                    IsEnabled(traits, NegativeOilTrait.NegativeBulletSize, RemoveNegativeBulletSize) ||
                    IsEnabled(traits, NegativeOilTrait.NegativeRpm, RemoveNegativeRpm) ||
+                   IsEnabled(traits, NegativeOilTrait.NegativeMaxDurability, RemoveNegativeMaxDurability) ||
                    IsEnabled(traits, NegativeOilTrait.ExtraDurabilityCost, RemoveExtraDurabilityCost);
         }
 

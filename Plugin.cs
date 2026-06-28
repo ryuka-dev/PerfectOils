@@ -13,7 +13,7 @@ namespace PerfectOils
     {
         public const string PluginGuid = "com.ryuka.sulfur.perfectoils";
         public const string PluginName = "Perfect Oils";
-        public const string PluginVersion = "1.3.5";
+        public const string PluginVersion = "1.3.6";
 
         internal static Plugin Instance { get; private set; }
         internal static ManualLogSource Log { get; private set; }
@@ -59,8 +59,14 @@ namespace PerfectOils
             OilTraits = new OilTraitService(Logger, TraitSettings);
             TooltipRenderer = new TooltipStrikeRenderer(OilTraits, TraitSettings, Logger);
 
-            Enabled.SettingChanged += OnDurabilitySettingChanged;
-            TraitSettings.RemoveExtraDurabilityCost.SettingChanged += OnDurabilitySettingChanged;
+            // Any suppression-affecting toggle should take effect immediately, even on
+            // weapons that are already oiled. The master switch plus every per-trait toggle
+            // re-runs the durability refresh and re-applies oil modifiers on loaded items.
+            Enabled.SettingChanged += OnSuppressionSettingChanged;
+            foreach (ConfigEntry<bool> traitSetting in TraitSettings.AllSettings())
+            {
+                traitSetting.SettingChanged += OnSuppressionSettingChanged;
+            }
 
             _harmony = new Harmony(PluginGuid);
             _harmony.PatchAll(typeof(Plugin).Assembly);
@@ -127,20 +133,30 @@ namespace PerfectOils
             OilTraits.RefreshDurabilityFlags(Enabled.Value);
         }
 
-        private void OnDurabilitySettingChanged(object sender, EventArgs eventArgs)
+        private void OnSuppressionSettingChanged(object sender, EventArgs eventArgs)
         {
-            if (OilTraits != null && OilTraits.IsInitialized)
+            if (OilTraits == null || !OilTraits.IsInitialized)
             {
-                OilTraits.RefreshDurabilityFlags(Enabled.Value);
+                return;
             }
+
+            // Durability is driven by the shared CostsDurability flag and updates globally.
+            OilTraits.RefreshDurabilityFlags(Enabled.Value);
+
+            // Stat modifiers are baked per item, so rebuild the player's loaded items to make
+            // the new config visible without forcing a re-oil or a save reload.
+            OilReapplyService.ReapplyToLoadedItems(Logger);
         }
 
         private void OnDestroy()
         {
-            Enabled.SettingChanged -= OnDurabilitySettingChanged;
+            Enabled.SettingChanged -= OnSuppressionSettingChanged;
             if (TraitSettings != null)
             {
-                TraitSettings.RemoveExtraDurabilityCost.SettingChanged -= OnDurabilitySettingChanged;
+                foreach (ConfigEntry<bool> traitSetting in TraitSettings.AllSettings())
+                {
+                    traitSetting.SettingChanged -= OnSuppressionSettingChanged;
+                }
             }
 
             if (OilTraits != null)

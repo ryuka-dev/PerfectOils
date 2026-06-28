@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OilReapplyService.cs" />
     <Compile Include="OilTraitService.cs" />
     <Compile Include="Patches\AssetLoadingPatches.cs" />
     <Compile Include="NegativeTraitPolicy.cs" />

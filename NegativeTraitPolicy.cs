@@ -25,7 +25,8 @@ namespace PerfectOils
         NegativeDamage = 1 << 11,
         NegativeBulletSize = 1 << 12,
         NegativeRpm = 1 << 13,
-        ExtraDurabilityCost = 1 << 14
+        ExtraDurabilityCost = 1 << 14,
+        NegativeMaxDurability = 1 << 15
     }
 
     internal static class NegativeTraitPolicy
@@ -154,6 +155,16 @@ namespace PerfectOils
                         ? NegativeOilTrait.ExtraDurabilityCost
                         : NegativeOilTrait.None;
 
+                case ItemAttributes.MaxDurability:
+                    // Oils that lower the weapon's maximum durability cap apply a
+                    // negative MaxDurability modifier (e.g. -30% / -0.30 PercentAdd,
+                    // or a flat reduction). The game reads MaxDurability live via
+                    // InventoryItem.DurabilityMax, so suppressing this modifier keeps
+                    // the original cap. Positive cap bonuses are intentionally kept.
+                    return DecreasesAttribute(modifier)
+                        ? NegativeOilTrait.NegativeMaxDurability
+                        : NegativeOilTrait.None;
+
                 default:
                     return NegativeOilTrait.None;
             }
@@ -182,6 +193,7 @@ namespace PerfectOils
             AddName(names, traits, NegativeOilTrait.NegativeBulletSize, "Negative Bullet Size");
             AddName(names, traits, NegativeOilTrait.NegativeRpm, "Negative RPM");
             AddName(names, traits, NegativeOilTrait.ExtraDurabilityCost, "Extra Oil Durability Cost");
+            AddName(names, traits, NegativeOilTrait.NegativeMaxDurability, "Negative Max Durability");
             return string.Join(" + ", names.ToArray());
         }
 
