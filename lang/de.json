@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Entfernt Feuerratenmodifikatoren nur, wenn sie die RPM senken. Positive Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Negative max. Haltbarkeit entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Entfernt Modifikatoren der maximalen Haltbarkeit nur, wenn sie die Haltbarkeitsgrenze senken. Positive Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Mehr Rückstoß entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Entfernt Öl-Effekte, die den Rückstoß erhöhen. Rückstoßmindernde Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Mehr Streuung entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Entfernt Öl-Effekte, die die Streuung vergrößern. Genauigkeitsfördernde Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Langsameres Nachladen entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Entfernt Nachladegeschwindigkeitsmodifikatoren nur, wenn sie das Nachladen verlangsamen. Schnelleres Nachladen bleibt aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Schnelleren Haltbarkeitsverlust entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Entfernt Öl-Effekte, die den Haltbarkeitsverlust pro Schuss erhöhen. Haltbarkeitsschonende Effekte bleiben aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Selbstschaden entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Entfernt Öl-Effekte, die dem Träger beim Schießen Schaden zufügen."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Reduzierte Projektilkraft entfernen"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Entfernt Projektilkraftmodifikatoren nur, wenn sie die Abschussgeschwindigkeit verringern. Kraftboni bleiben aktiv."
     }
   ]
 }

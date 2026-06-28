@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Rimuove i modificatori della cadenza solo quando riducono gli RPM. Gli effetti positivi restano attivi."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Rimuovi durabilità massima negativa"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Rimuove i modificatori di durabilità massima solo quando riducono il limite. Gli effetti positivi restano attivi."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Rimuovi maggiore rinculo"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Rimuove gli effetti degli oli che aumentano il rinculo. Gli effetti che riducono il rinculo restano attivi."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Rimuovi maggiore dispersione"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Rimuove gli effetti degli oli che ampliano la dispersione. Gli effetti che migliorano la precisione restano attivi."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Rimuovi ricarica più lenta"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Rimuove i modificatori di velocità di ricarica solo quando la rallentano. Gli effetti di ricarica più rapida restano attivi."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Rimuovi consumo di durabilità più rapido"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Rimuove gli effetti degli oli che aumentano la perdita di durabilità per colpo. Gli effetti che risparmiano durabilità restano attivi."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Rimuovi danno a sé stessi"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Rimuove gli effetti degli oli che danneggiano chi impugna l'arma quando spara."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Rimuovi forza del proiettile ridotta"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Rimuove i modificatori di forza del proiettile solo quando riducono la velocità di lancio. I bonus di forza restano attivi."
     }
   ]
 }

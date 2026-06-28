@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Elimina modificadores de cadencia solo cuando reducen las RPM. Los efectos positivos permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Eliminar durabilidad máxima negativa"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Elimina modificadores de durabilidad máxima solo cuando reducen el límite. Los efectos positivos permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Eliminar mayor retroceso"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Elimina los efectos de aceite que aumentan el retroceso. Los efectos que reducen el retroceso permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Eliminar mayor dispersión"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Elimina los efectos de aceite que amplían la dispersión. Los efectos que mejoran la precisión permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Eliminar recarga más lenta"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Elimina modificadores de velocidad de recarga solo cuando la ralentizan. Los efectos de recarga más rápida permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Eliminar pérdida de durabilidad más rápida"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Elimina los efectos de aceite que aumentan la pérdida de durabilidad por disparo. Los efectos que ahorran durabilidad permanecen activos."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Eliminar daño propio"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Elimina los efectos de aceite que dañan al portador al disparar."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Eliminar fuerza de proyectil reducida"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Elimina modificadores de fuerza del proyectil solo cuando reducen la velocidad de lanzamiento. Las bonificaciones de fuerza permanecen activas."
     }
   ]
 }

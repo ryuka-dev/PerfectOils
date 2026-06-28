@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "RPMを低下させる補正だけを削除します。連射速度を上げる効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "最大耐久度の低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "最大耐久度の上限を下げる補正だけを削除します。最大耐久度を上げる有利な効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "反動増加を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "反動を増加させるオイル効果を削除します。反動を軽減する効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "拡散増加を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "拡散を広げるオイル効果を削除します。精度を高める効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "リロード低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "リロードを遅くする補正だけを削除します。リロードを速める効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "耐久消耗の増加を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "1発ごとの耐久消耗を増やすオイル効果を削除します。耐久消耗を抑える効果は維持されます。"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "自傷ダメージを削除"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "発砲時に使用者へダメージを与えるオイル効果を削除します。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "投射物の威力低下を削除"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "発射の威力を下げる補正だけを削除します。威力を上げる効果は維持されます。"
     }
   ]
 }

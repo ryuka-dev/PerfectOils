@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Usuwa modyfikatory szybkostrzelności tylko wtedy, gdy obniżają RPM. Pozytywne efekty pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Usuń ujemną maks. wytrzymałość"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Usuwa modyfikatory maksymalnej wytrzymałości tylko wtedy, gdy obniżają limit. Pozytywne efekty pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Usuń większy odrzut"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Usuwa efekty olejów zwiększające odrzut. Efekty zmniejszające odrzut pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Usuń większy rozrzut"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Usuwa efekty olejów zwiększające rozrzut. Efekty poprawiające celność pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Usuń wolniejsze przeładowanie"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Usuwa modyfikatory szybkości przeładowania tylko wtedy, gdy je spowalniają. Efekty szybszego przeładowania pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Usuń szybszą utratę wytrzymałości"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Usuwa efekty olejów zwiększające utratę wytrzymałości na strzał. Efekty oszczędzające wytrzymałość pozostają aktywne."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Usuń obrażenia własne"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Usuwa efekty olejów raniące posiadacza podczas strzelania."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Usuń zmniejszoną siłę pocisku"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Usuwa modyfikatory siły pocisku tylko wtedy, gdy zmniejszają prędkość wystrzału. Premie do siły pozostają aktywne."
     }
   ]
 }

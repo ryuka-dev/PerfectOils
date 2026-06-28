@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Tar bort eldhastighetsmodifierare endast när de sänker RPM. Positiva effekter förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Ta bort negativ max. hållbarhet"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Tar bort modifierare för maximal hållbarhet endast när de sänker gränsen. Positiva effekter förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Ta bort ökad rekyl"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Tar bort oljeeffekter som ökar rekylen. Effekter som minskar rekylen förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Ta bort ökad spridning"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Tar bort oljeeffekter som ökar spridningen. Effekter som förbättrar träffsäkerheten förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Ta bort långsammare omladdning"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Tar bort omladdningshastighetsmodifierare endast när de gör omladdningen långsammare. Snabbare omladdning förblir aktiv."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Ta bort snabbare slitage"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Tar bort oljeeffekter som ökar hållbarhetsförlusten per skott. Hållbarhetsbesparande effekter förblir aktiva."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Ta bort självskada"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Tar bort oljeeffekter som skadar bäraren vid avfyrning."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Ta bort minskad projektilkraft"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Tar bort projektilkraftsmodifierare endast när de minskar utgångshastigheten. Kraftbonusar förblir aktiva."
     }
   ]
 }

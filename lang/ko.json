@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "RPM을 낮추는 수정치만 제거합니다. 연사력을 높이는 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "최대 내구도 감소 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "최대 내구도 상한을 낮추는 수정치만 제거합니다. 최대 내구도를 높이는 긍정 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "반동 증가 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "반동을 증가시키는 오일 효과를 제거합니다. 반동을 줄이는 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "탄퍼짐 증가 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "탄퍼짐을 넓히는 오일 효과를 제거합니다. 명중률을 높이는 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "재장전 둔화 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "재장전을 느리게 하는 수정치만 제거합니다. 재장전을 빠르게 하는 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "내구도 소모 증가 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "발당 내구도 소모를 늘리는 오일 효과를 제거합니다. 내구도 소모를 줄이는 효과는 유지됩니다."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "자해 피해 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "발사 시 사용자에게 피해를 주는 오일 효과를 제거합니다."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "투사체 힘 감소 제거"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "발사 힘을 낮추는 수정치만 제거합니다. 힘을 높이는 효과는 유지됩니다."
     }
   ]
 }

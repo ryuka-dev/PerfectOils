@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Убирает модификаторы скорострельности только при снижении RPM. Положительные эффекты сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Убрать отрицательную макс. прочность"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Убирает модификаторы максимальной прочности только при снижении предела. Положительные эффекты сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Убрать повышенную отдачу"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Убирает эффекты масел, увеличивающие отдачу. Эффекты, снижающие отдачу, сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Убрать повышенный разброс"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Убирает эффекты масел, увеличивающие разброс. Эффекты, улучшающие точность, сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Убрать замедленную перезарядку"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Убирает модификаторы скорости перезарядки только при её замедлении. Эффекты ускоренной перезарядки сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Убрать ускоренный износ"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Убирает эффекты масел, увеличивающие потерю прочности за выстрел. Эффекты, экономящие прочность, сохраняются."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Убрать урон по себе"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Убирает эффекты масел, наносящие урон владельцу при стрельбе."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Убрать сниженную силу снаряда"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Убирает модификаторы силы снаряда только при снижении начальной скорости. Бонусы к силе сохраняются."
     }
   ]
 }

@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "يزيل مُعدّلات معدل الإطلاق فقط عندما تقلل RPM. تبقى التأثيرات الإيجابية فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "إزالة الحد الأقصى السلبي للمتانة"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "يزيل مُعدّلات الحد الأقصى للمتانة فقط عندما تخفض الحد. تبقى التأثيرات الإيجابية فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "إزالة زيادة الارتداد"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "يزيل تأثيرات الزيوت التي تزيد الارتداد. تبقى التأثيرات التي تقلل الارتداد فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "إزالة زيادة التشتت"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "يزيل تأثيرات الزيوت التي توسّع التشتت. تبقى التأثيرات التي تحسّن الدقة فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "إزالة إعادة التلقيم الأبطأ"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "يزيل مُعدّلات سرعة إعادة التلقيم فقط عندما تبطئها. تبقى تأثيرات إعادة التلقيم الأسرع فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "إزالة فقدان المتانة الأسرع"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "يزيل تأثيرات الزيوت التي تزيد فقدان المتانة لكل طلقة. تبقى التأثيرات الموفّرة للمتانة فعالة."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "إزالة الضرر الذاتي"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "يزيل تأثيرات الزيوت التي تؤذي حامل السلاح عند إطلاق النار."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "إزالة قوة المقذوف المنخفضة"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "يزيل مُعدّلات قوة المقذوف فقط عندما تقلل سرعة الإطلاق. تبقى مكافآت القوة فعالة."
     }
   ]
 }

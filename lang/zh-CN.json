@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "仅移除降低 RPM 的射速修改。提高射速的正面效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "移除负面最大耐久"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "仅移除降低最大耐久上限的修改。提高最大耐久的正面效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "移除后坐力增加"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "移除会增加后坐力的魔油效果。降低后坐力的效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "移除散布增加"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "移除会扩大散布的魔油效果。提高精准度的效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "移除装填变慢"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "仅移除减慢装填的修改。加快装填的效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "移除耐久消耗加快"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "移除会加快每发耐久消耗的魔油效果。降低耐久消耗的效果仍会生效。"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "移除自身伤害"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "移除会在开火时伤害持有者的魔油效果。"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "移除弹丸力度降低"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "仅移除降低发射力度的修改。提高力度的正面效果仍会生效。"
     }
   ]
 }

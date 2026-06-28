@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Remove fire-rate modifiers only when they reduce RPM. Positive fire-rate effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Remove Negative Max Durability"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Remove max-durability modifiers only when they lower the durability cap. Positive max-durability effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Remove More Recoil"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Remove oil effects that increase recoil. Recoil-reducing effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Remove More Spread"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Remove oil effects that widen the spread cone. Accuracy-improving effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Remove Slower Reload"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Remove reload-speed modifiers only when they slow reloading. Faster-reload effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Remove Faster Durability Loss"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Remove oil effects that increase per-shot durability loss. Durability-saving effects remain active."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Remove Self Damage"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Remove oil effects that damage the wielder when firing."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Remove Reduced Projectile Force"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Remove projectile-force modifiers only when they reduce launch velocity. Force bonuses remain active."
     }
   ]
 }

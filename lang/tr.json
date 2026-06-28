@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Atış hızı değiştiricilerini yalnızca RPM'yi düşürdüklerinde kaldırır. Olumlu etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Negatif maks. dayanıklılığı kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Maksimum dayanıklılık değiştiricilerini yalnızca sınırı düşürdüklerinde kaldırır. Olumlu etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Artan geri tepmeyi kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Geri tepmeyi artıran yağ etkilerini kaldırır. Geri tepmeyi azaltan etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Artan yayılmayı kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Yayılmayı genişleten yağ etkilerini kaldırır. İsabeti artıran etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Daha yavaş şarjı kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Şarj hızı değiştiricilerini yalnızca şarjı yavaşlattıklarında kaldırır. Daha hızlı şarj etkileri etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Daha hızlı dayanıklılık kaybını kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Atış başına dayanıklılık kaybını artıran yağ etkilerini kaldırır. Dayanıklılık tasarrufu sağlayan etkiler etkin kalır."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Kendine hasarı kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Ateş ederken kullanıcıya hasar veren yağ etkilerini kaldırır."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Azalan mermi kuvvetini kaldır"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Mermi kuvveti değiştiricilerini yalnızca fırlatma hızını düşürdüklerinde kaldırır. Kuvvet bonusları etkin kalır."
     }
   ]
 }

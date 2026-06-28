@@ -167,6 +167,62 @@
     {
       "key": "entry.Traits.RemoveNegativeRpm.description",
       "value": "Supprime les modificateurs de cadence uniquement lorsqu'ils réduisent les RPM. Les effets positifs restent actifs."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.name",
+      "value": "Supprimer la durabilité max négative"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeMaxDurability.description",
+      "value": "Supprime les modificateurs de durabilité maximale uniquement lorsqu'ils réduisent la limite. Les effets positifs restent actifs."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.name",
+      "value": "Supprimer le recul accru"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreRecoil.description",
+      "value": "Supprime les effets d'huile qui augmentent le recul. Les effets réduisant le recul restent actifs."
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.name",
+      "value": "Supprimer la dispersion accrue"
+    },
+    {
+      "key": "entry.Traits.RemoveMoreSpread.description",
+      "value": "Supprime les effets d'huile qui élargissent la dispersion. Les effets améliorant la précision restent actifs."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.name",
+      "value": "Supprimer le rechargement plus lent"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeReloadSpeed.description",
+      "value": "Supprime les modificateurs de vitesse de rechargement uniquement lorsqu'ils le ralentissent. Les effets de rechargement plus rapide restent actifs."
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.name",
+      "value": "Supprimer l'usure plus rapide"
+    },
+    {
+      "key": "entry.Traits.RemoveFasterDurabilityLoss.description",
+      "value": "Supprime les effets d'huile qui augmentent la perte de durabilité par tir. Les effets préservant la durabilité restent actifs."
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.name",
+      "value": "Supprimer les dégâts sur soi"
+    },
+    {
+      "key": "entry.Traits.RemoveSelfDamage.description",
+      "value": "Supprime les effets d'huile qui blessent le porteur lors du tir."
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.name",
+      "value": "Supprimer la force de projectile réduite"
+    },
+    {
+      "key": "entry.Traits.RemoveNegativeProjectileForce.description",
+      "value": "Supprime les modificateurs de force du projectile uniquement lorsqu'ils réduisent la vitesse de tir. Les bonus de force restent actifs."
     }
   ]
 }
