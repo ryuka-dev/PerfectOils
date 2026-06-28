@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Perfect Oils - Thunderstore release packaging artifacts
+# (the plugin DLL and the built upload zip are produced during packaging, not tracked)
+Thunderstore/*.zip
+Thunderstore/*.dll
+Thunderstore/**/*.zip
+Thunderstore/**/*.dll
