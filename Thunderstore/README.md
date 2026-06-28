@@ -29,6 +29,9 @@ The following stronger stat-changing removals are available but default to disab
 - More Recoil
 - More Spread
 - Slower Reload
+- Faster Durability Loss
+- Self Damage
+- Reduced Projectile Force
 - Extra Oil Durability Cost
 
 The signed-value rules only suppress modifiers in the harmful direction:
@@ -40,9 +43,12 @@ The signed-value rules only suppress modifiers in the harmful direction:
 - `MaxDurability < 0`: reduced maximum durability cap;
 - `KickMultiplier > 0`: more recoil;
 - `Spread > 0`: wider spread cone;
-- `ReloadSpeed < 0`: slower reload.
+- `ReloadSpeed < 0`: slower reload;
+- `DurabilityLoss > 0`: faster per-shot durability loss;
+- `EnchantmentSelfDamage > 0`: damages the wielder on fire;
+- `ProjectileForce < 0`: weaker launch velocity.
 
-Positive bullet-speed, damage, bullet-size, RPM, and max-durability modifiers, along with recoil-reducing, accuracy-improving, and faster-reload modifiers, remain active.
+Positive bullet-speed, damage, bullet-size, RPM, max-durability, and projectile-force modifiers, along with recoil-reducing, accuracy-improving, faster-reload, and durability-saving modifiers, remain active.
 
 `More Bullet Drop` also suppresses its same-oil reduced-speed or increased-mass companion modifiers. Because reduced projectile speed belongs to both categories, it is removed when either `RemoveMoreBulletDrop` or `RemoveNegativeBulletSpeed` is enabled.
 
@@ -124,6 +130,9 @@ Disabled by default:
 - `RemoveMoreRecoil = false`
 - `RemoveMoreSpread = false`
 - `RemoveNegativeReloadSpeed = false`
+- `RemoveFasterDurabilityLoss = false`
+- `RemoveSelfDamage = false`
+- `RemoveNegativeProjectileForce = false`
 
 ### Display / Debug
 

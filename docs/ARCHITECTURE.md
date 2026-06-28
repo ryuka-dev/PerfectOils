@@ -56,6 +56,9 @@ Classification lives in [`NegativeTraitPolicy.cs`](../NegativeTraitPolicy.cs).
 | MoreRecoil | `KickMultiplier` | value > 0 (recoil = `KickMultiplier * KickPower`) | off |
 | MoreSpread | `Spread` | value > 0 (wider cone) | off |
 | NegativeReloadSpeed | `ReloadSpeed` | value < 0 (drives reload animation speed) | off |
+| FasterDurabilityLoss | `DurabilityLoss` | value > 0 (per-shot loss multiplier, base 1) | off |
+| SelfDamage | `EnchantmentSelfDamage` | value > 0 (damages wielder on fire; read live, unlike `EnchantmentDurabilityCost`) | off |
+| NegativeProjectileForce | `ProjectileForce` | value < 0 (launch velocity = `1 + ProjectileForce`) | off |
 | ExtraDurabilityCost | `EnchantmentDurabilityCost` | value > 0 (handled via the durability flag, see below) | off |
 
 **Bullet drop note:** the visible "Bullet drop" tooltip row is *not* `ProjectileGravityFactor`

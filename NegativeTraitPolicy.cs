@@ -29,7 +29,10 @@ namespace PerfectOils
         NegativeMaxDurability = 1 << 15,
         MoreRecoil = 1 << 16,
         MoreSpread = 1 << 17,
-        NegativeReloadSpeed = 1 << 18
+        NegativeReloadSpeed = 1 << 18,
+        FasterDurabilityLoss = 1 << 19,
+        SelfDamage = 1 << 20,
+        NegativeProjectileForce = 1 << 21
     }
 
     internal static class NegativeTraitPolicy
@@ -181,6 +184,27 @@ namespace PerfectOils
                         ? NegativeOilTrait.NegativeReloadSpeed
                         : NegativeOilTrait.None;
 
+                case ItemAttributes.DurabilityLoss:
+                    // DurabilityLoss is the per-shot durability-loss multiplier (base 1,
+                    // read live via DurabilityLossMultiplier). Higher means the weapon
+                    // degrades faster, so only positive (worse) modifiers are suppressed.
+                    return IncreasesAttribute(modifier)
+                        ? NegativeOilTrait.FasterDurabilityLoss
+                        : NegativeOilTrait.None;
+
+                case ItemAttributes.EnchantmentSelfDamage:
+                    // Read live; a positive value damages the wielder on fire.
+                    return IncreasesAttribute(modifier)
+                        ? NegativeOilTrait.SelfDamage
+                        : NegativeOilTrait.None;
+
+                case ItemAttributes.ProjectileForce:
+                    // Projectile launch velocity is scaled by (1 + ProjectileForce).
+                    // Only negative (weaker) modifiers are suppressed; bonuses are kept.
+                    return DecreasesAttribute(modifier)
+                        ? NegativeOilTrait.NegativeProjectileForce
+                        : NegativeOilTrait.None;
+
                 case ItemAttributes.MaxDurability:
                     // Oils that lower the weapon's maximum durability cap apply a
                     // negative MaxDurability modifier (e.g. -30% / -0.30 PercentAdd,
@@ -223,6 +247,9 @@ namespace PerfectOils
             AddName(names, traits, NegativeOilTrait.MoreRecoil, "More Recoil");
             AddName(names, traits, NegativeOilTrait.MoreSpread, "More Spread");
             AddName(names, traits, NegativeOilTrait.NegativeReloadSpeed, "Slower Reload");
+            AddName(names, traits, NegativeOilTrait.FasterDurabilityLoss, "Faster Durability Loss");
+            AddName(names, traits, NegativeOilTrait.SelfDamage, "Self Damage");
+            AddName(names, traits, NegativeOilTrait.NegativeProjectileForce, "Reduced Projectile Force");
             return string.Join(" + ", names.ToArray());
         }
 

@@ -22,6 +22,9 @@ namespace PerfectOils
         internal ConfigEntry<bool> RemoveMoreRecoil { get; private set; }
         internal ConfigEntry<bool> RemoveMoreSpread { get; private set; }
         internal ConfigEntry<bool> RemoveNegativeReloadSpeed { get; private set; }
+        internal ConfigEntry<bool> RemoveFasterDurabilityLoss { get; private set; }
+        internal ConfigEntry<bool> RemoveSelfDamage { get; private set; }
+        internal ConfigEntry<bool> RemoveNegativeProjectileForce { get; private set; }
         internal ConfigEntry<bool> RemoveExtraDurabilityCost { get; private set; }
 
         internal TraitConfiguration(ConfigFile config)
@@ -134,6 +137,24 @@ namespace PerfectOils
                 false,
                 "Remove ReloadSpeed modifiers only when they slow reloading. Faster-reload modifiers remain active.");
 
+            RemoveFasterDurabilityLoss = config.Bind(
+                "Traits",
+                "RemoveFasterDurabilityLoss",
+                false,
+                "Remove DurabilityLoss modifiers only when they increase the per-shot durability-loss multiplier. Durability-saving modifiers remain active.");
+
+            RemoveSelfDamage = config.Bind(
+                "Traits",
+                "RemoveSelfDamage",
+                false,
+                "Remove oil modifiers that damage the wielder when firing (EnchantmentSelfDamage).");
+
+            RemoveNegativeProjectileForce = config.Bind(
+                "Traits",
+                "RemoveNegativeProjectileForce",
+                false,
+                "Remove ProjectileForce modifiers only when they reduce launch velocity. Force bonuses remain active.");
+
             // Keep the old section/key for backwards compatibility with v1.1.x configs.
             RemoveExtraDurabilityCost = config.Bind(
                 "General",
@@ -164,6 +185,9 @@ namespace PerfectOils
                 RemoveMoreRecoil,
                 RemoveMoreSpread,
                 RemoveNegativeReloadSpeed,
+                RemoveFasterDurabilityLoss,
+                RemoveSelfDamage,
+                RemoveNegativeProjectileForce,
                 RemoveExtraDurabilityCost
             };
         }
@@ -188,6 +212,9 @@ namespace PerfectOils
                    IsEnabled(traits, NegativeOilTrait.MoreRecoil, RemoveMoreRecoil) ||
                    IsEnabled(traits, NegativeOilTrait.MoreSpread, RemoveMoreSpread) ||
                    IsEnabled(traits, NegativeOilTrait.NegativeReloadSpeed, RemoveNegativeReloadSpeed) ||
+                   IsEnabled(traits, NegativeOilTrait.FasterDurabilityLoss, RemoveFasterDurabilityLoss) ||
+                   IsEnabled(traits, NegativeOilTrait.SelfDamage, RemoveSelfDamage) ||
+                   IsEnabled(traits, NegativeOilTrait.NegativeProjectileForce, RemoveNegativeProjectileForce) ||
                    IsEnabled(traits, NegativeOilTrait.ExtraDurabilityCost, RemoveExtraDurabilityCost);
         }
 
