@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <!--
+      Release packaging staging folder. The Thunderstore zip is built from whatever sits here,
+      so the build has to drop a fresh DLL into it or a release would ship a stale one.
+
+      Note: the Reference HintPaths in PerfectOils.csproj still hardcode the game and BepInEx
+      paths. Migrating them onto properties here is worthwhile but is a separate change from a
+      release, so it has not been done yet.
+    -->
+    <ThunderstoreDir Condition="'$(ThunderstoreDir)' == ''">$(MSBuildThisFileDirectory)Thunderstore</ThunderstoreDir>
+  </PropertyGroup>
+</Project>

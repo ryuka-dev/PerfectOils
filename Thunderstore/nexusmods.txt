@@ -1,0 +1,233 @@
+[font=Arial Black][color=DarkOrange][size=5][b]Perfect Oils 1.3.6[/b][/size][/color][/font]
+
+A BepInEx 5 mod for [b]SULFUR[/b] that selectively removes undesirable weapon-oil traits while preserving positive effects and the original localized descriptions.
+
+[color=RoyalBlue][b]Removed traits[/b][/color]
+
+Every supported trait has its own config switch.
+
+The default profile only removes effects that have relatively little impact on weapon balance:
+
+[list]
+[*]Disable Aiming[/*]
+[*]Extra Ammo Consume Chance[/*]
+[*]Decrease Accuracy When Moving[/*]
+[*]Decrease Move Speed[/*]
+[*]Decrease Jump Power[/*]
+[*]Decrease Loot Chance Multiplier[/*]
+[*]Disable Money Drops[/*]
+[*]Disable Organ Drops[/*]
+[/list]
+The following stronger stat-changing removals are available but default to disabled:
+
+[list]
+[*]More Bullet Drop[/*]
+[*]More Drag[/*]
+[*]Negative Bullet Speed[/*]
+[*]Negative Damage[/*]
+[*]Negative Bullet Size[/*]
+[*]Negative RPM[/*]
+[*]Negative Max Durability[/*]
+[*]More Recoil[/*]
+[*]More Spread[/*]
+[*]Slower Reload[/*]
+[*]Faster Durability Loss[/*]
+[*]Self Damage[/*]
+[*]Reduced Projectile Force[/*]
+[*]Extra Oil Durability Cost[/*]
+[/list]
+The signed-value rules only suppress modifiers in the harmful direction:
+
+[list]
+[*][color=#ffff00]ProjectileTimeScale < 0[/color]: negative bullet speed;[/*]
+[*][color=#ffff00]Damage[/color] or [color=#ffff00]DamageModifier < 0[/color]: negative damage, for both Flat and percentage modifier types;[/*]
+[*][color=#ffff00]ProjectileScale < 0[/color]: negative bullet size;[/*]
+[*][color=#ffff00]RPM < 0[/color]: negative fire rate;[/*]
+[*][color=#ffff00]MaxDurability < 0[/color]: reduced maximum durability cap;[/*]
+[*][color=#ffff00]KickMultiplier > 0[/color]: more recoil;[/*]
+[*][color=#ffff00]Spread > 0[/color]: wider spread cone;[/*]
+[*][color=#ffff00]ReloadSpeed < 0[/color]: slower reload;[/*]
+[*][color=#ffff00]DurabilityLoss > 0[/color]: faster per-shot durability loss;[/*]
+[*][color=#ffff00]EnchantmentSelfDamage > 0[/color]: damages the wielder on fire;[/*]
+[*][color=#ffff00]ProjectileForce < 0[/color]: weaker launch velocity.[/*]
+[/list]
+Positive bullet-speed, damage, bullet-size, RPM, max-durability, and projectile-force modifiers, along with recoil-reducing, accuracy-improving, faster-reload, and durability-saving modifiers, remain active.
+
+[color=#ffff00]More Bullet Drop[/color] also suppresses its same-oil reduced-speed or increased-mass companion modifiers. Because reduced projectile speed belongs to both categories, it is removed when either [color=#ffff00]RemoveMoreBulletDrop[/color] or [color=#ffff00]RemoveNegativeBulletSpeed[/color] is enabled.
+
+[color=RoyalBlue][b]Tooltip behavior[/b][/color]
+
+The game still shows the original oil effects. Lines for traits currently disabled by Perfect Oils are wrapped in TextMeshPro's strikethrough tag.
+
+This works for:
+
+[list]
+[*]hovering an oil item;[/*]
+[*]hovering an oil listed on an enchanted weapon;[/*]
+[*]randomly selected oil enchantments.[/*]
+[/list]
+The tooltip and runtime suppression use the same trait classifier and the same config values, so their states remain consistent.
+
+[color=RoyalBlue][b]Implementation[/b][/color]
+
+Perfect Oils keeps [color=#ffff00]EnchantmentDefinition.modifiersApplied[/color] intact. At database load it indexes exact modifier signatures by:
+
+[list]
+[*]enchantment source ID;[/*]
+[*][color=#ffff00]ItemAttributes[/color] value;[/*]
+[*][color=#ffff00]StatModType[/color];[/*]
+[*]modifier value;[/*]
+[*]classified negative-trait flags.[/*]
+[/list]
+A targeted prefix on [color=#ffff00]ItemStats.AddModifier(ItemAttributes, StatModifier)[/color] ignores only a matching oil modifier whose corresponding config option is enabled. No weapon, loot, movement, aiming, projectile, or damage consumer is replaced.
+
+The index contains every known negative signature regardless of the current settings, so config changes do not require rebuilding the asset database.
+
+Oil stat modifiers are baked into each item's [color=#ffff00]ItemStats[/color] when the oil is applied or the save is loaded, so a changed setting cannot retroactively alter an already-oiled weapon by itself. To make settings take effect live, changing any trait toggle (or the master [color=#ffff00]Enabled[/color] switch) re-applies oil modifiers to the player's currently loaded items - equipped items, the backpack, the paperdoll, and any opened stash - by removing and re-adding each enchantment's modifiers so they pass through the suppression prefix again under the new config. Items in a stash that has never been opened this session are rebuilt the next time a setting changes while that stash is loaded. Tooltip changes are evaluated whenever the tooltip is rebuilt. The durability-cost setting updates the shared oil definitions immediately.
+
+[color=RoyalBlue][b]Requirements[/b][/color]
+
+[list]
+[*]SULFUR[/*]
+[*]BepInExPack [color=#ffff00]5.4.2305[/color][/*]
+[/list]
+[color=RoyalBlue][b]Build[/b][/color]
+
+[list=1]
+[*]Copy [color=#ffff00]LocalPaths.props.example[/color] to [color=#ffff00]LocalPaths.props[/color].[/*]
+[*]Set [color=#ffff00]SulfurManagedDir[/color] and [color=#ffff00]BepInExCoreDir[/color].[/*]
+[*]Build [color=#ffff00]PerfectOils.csproj[/color] in Release mode.[/*]
+[*]Copy [color=#ffff00]PerfectOils.dll[/color] to [color=#ffff00]BepInEx/plugins/PerfectOils/[/color].[/*]
+[/list]
+No game DLLs, Unity assemblies, or BepInEx binaries are included in this source package.
+
+[color=RoyalBlue][b]Config[/b][/color]
+
+Generated at:
+
+[color=#ffff00]BepInEx/config/com.ryuka.sulfur.perfectoils.cfg[/color]
+
+[color=DodgerBlue][b]General[/b][/color]
+
+[list]
+[*][color=#ffff00]Enabled = true[/color][/*]
+[*][color=#ffff00]RemoveExtraDurabilityCost = false[/color][/*]
+[/list]
+[color=DodgerBlue][b]Traits[/b][/color]
+
+Enabled by default:
+
+[list]
+[*][color=#ffff00]RemoveDisableAiming = true[/color][/*]
+[*][color=#ffff00]RemoveExtraAmmoConsumeChance = true[/color][/*]
+[*][color=#ffff00]RemoveDecreaseAccuracyWhenMoving = true[/color][/*]
+[*][color=#ffff00]RemoveDecreaseMoveSpeed = true[/color][/*]
+[*][color=#ffff00]RemoveDecreaseJumpPower = true[/color][/*]
+[*][color=#ffff00]RemoveDecreaseLootChanceMultiplier = true[/color][/*]
+[*][color=#ffff00]RemoveDisableMoneyDrops = true[/color][/*]
+[*][color=#ffff00]RemoveDisableOrganDrops = true[/color][/*]
+[/list]
+Disabled by default:
+
+[list]
+[*][color=#ffff00]RemoveMoreBulletDrop = false[/color][/*]
+[*][color=#ffff00]RemoveMoreDrag = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeBulletSpeed = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeDamage = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeBulletSize = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeRpm = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeMaxDurability = false[/color][/*]
+[*][color=#ffff00]RemoveMoreRecoil = false[/color][/*]
+[*][color=#ffff00]RemoveMoreSpread = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeReloadSpeed = false[/color][/*]
+[*][color=#ffff00]RemoveFasterDurabilityLoss = false[/color][/*]
+[*][color=#ffff00]RemoveSelfDamage = false[/color][/*]
+[*][color=#ffff00]RemoveNegativeProjectileForce = false[/color][/*]
+[/list]
+[color=DodgerBlue][b]Display / Debug[/b][/color]
+
+[list]
+[*][color=#ffff00]ShowRemovedTraitsWithStrikethrough = true[/color][/*]
+[*][color=#ffff00]DetailedLogging = false[/color][/*]
+[/list]
+The existing [color=#ffff00]General.RemoveExtraDurabilityCost[/color] key is retained for compatibility with v1.1.x configuration files.
+
+[color=RoyalBlue][b]Runtime verification[/b][/color]
+
+The initialization log reports separate counts for:
+
+[list]
+[*]negative bullet speed;[/*]
+[*]flat negative damage;[/*]
+[*]percentage negative damage;[/*]
+[*]negative bullet size;[/*]
+[*]negative RPM.[/*]
+[/list]
+This verifies the actual Addressables data loaded by the current game build, which is not stored in the managed DLLs.
+
+[color=RoyalBlue][b]Author[/b][/color]
+
+ryuka
+
+[font=Arial Black][color=DarkOrange][size=5][b]Changelog[/b][/size][/color][/font]
+
+[color=RoyalBlue][b]1.3.7[/b][/color]
+
+[list]
+[*]Compatibility with SULFUR 0.19. The game made its open-stash inventory grids private, which broke the live re-apply introduced in 1.3.6. Changing a trait setting once again updates oiled weapons that are sitting in a storage chest you have opened this session, not just the ones you are carrying.[/*]
+[*]No gameplay or configuration changes. Existing settings files carry over untouched.[/*]
+[/list]
+[color=RoyalBlue][b]1.3.6[/b][/color]
+
+[list]
+[*]Added [color=#ffff00]RemoveNegativeMaxDurability[/color]: oils that lower a weapon's maximum durability cap (for example -30% or a flat reduction) can now be suppressed. Positive max-durability bonuses are kept. Disabled by default.[/*]
+[*]Added [color=#ffff00]RemoveMoreRecoil[/color], [color=#ffff00]RemoveMoreSpread[/color], and [color=#ffff00]RemoveNegativeReloadSpeed[/color]: the downside direction of the recoil ([color=#ffff00]KickMultiplier[/color]), spread ([color=#ffff00]Spread[/color]), and reload-speed ([color=#ffff00]ReloadSpeed[/color]) stats can now be suppressed. Only the harmful direction is removed - recoil-reducing, accuracy-improving, and faster-reload modifiers are kept. All disabled by default.[/*]
+[*]Added [color=#ffff00]RemoveFasterDurabilityLoss[/color], [color=#ffff00]RemoveSelfDamage[/color], and [color=#ffff00]RemoveNegativeProjectileForce[/color]: suppress oils that increase the per-shot durability-loss multiplier ([color=#ffff00]DurabilityLoss[/color]), damage the wielder on fire ([color=#ffff00]EnchantmentSelfDamage[/color]), or reduce projectile launch force ([color=#ffff00]ProjectileForce[/color]). Durability-saving and force-bonus modifiers are kept. All disabled by default. This completes coverage of every harmful-direction stat in the current oil data.[/*]
+[*]Fixed trait toggles not taking effect until a reload: changing any suppression setting in-game now re-applies oil modifiers to the player's currently loaded items (equipped, backpack, paperdoll, and opened stashes) immediately, so already-oiled weapons update without re-oiling or restarting.[/*]
+[*]Extended the live update to the master [color=#ffff00]Enabled[/color] switch as well as every per-trait toggle (previously only the durability-cost option updated live).[/*]
+[/list]
+[color=RoyalBlue][b]1.3.5[/b][/color]
+
+[list]
+[*]Fixed the More Bullet Drop option not working correctly.[/*]
+[*]Fixed missing strikethrough text for Bullet Drop effects.[/*]
+[*]Improved detection of Bullet Drop oil traits.[/*]
+[*]Removed the unfinished stat-reading workaround from previous test versions.[/*]
+[*]Fixed compilation errors from the diagnostic update.[/*]
+[/list]
+[color=RoyalBlue][b]1.3.0[/b][/color]
+
+[list]
+[*]Added configurable removal of negative RPM modifiers.[/*]
+[*]Added individual configuration options for all supported negative oil traits.[/*]
+[*]Enabled only lower-impact quality-of-life removals by default.[/*]
+[*]Disabled balance-sensitive ballistic, damage, bullet-size, RPM, and durability removals by default.[/*]
+[*]Added 14-language localization for the SULFUR Config interface.[/*]
+[/list]
+[color=RoyalBlue][b]1.2.1[/b][/color]
+
+[list]
+[*]Removed obsolete source-file references from the project.[/*]
+[*]Replaced the deprecated Unity object lookup API.[/*]
+[/list]
+[color=RoyalBlue][b]1.2.0[/b][/color]
+
+[list]
+[*]Added configurable removal of negative Bullet Speed.[/*]
+[*]Added configurable removal of negative flat and percentage Damage.[/*]
+[*]Added configurable removal of negative Bullet Size.[/*]
+[*]Unified runtime suppression and tooltip-strikethrough decisions.[/*]
+[/list]
+[color=RoyalBlue][b]1.1.1[/b][/color]
+
+[list]
+[*]Fixed oil detection for the current SULFUR item database.[/*]
+[*]Added database retry behavior and clearer diagnostic logging.[/*]
+[/list]
+[color=RoyalBlue][b]1.1.0[/b][/color]
+
+[list]
+[*]Preserved original oil descriptions.[/*]
+[*]Added strikethrough display for effects removed by the mod.[/*]
+[*]Applied suppression when oil modifiers are added to weapon stats.[/*]
+[/list]

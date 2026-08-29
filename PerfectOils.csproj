@@ -102,4 +102,19 @@
     <Compile Include="TraitConfiguration.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--
+    Stage the freshly built DLL for packaging. The release zip is assembled from Thunderstore/,
+    so without this the packaging script would either fail or, worse, pick up a leftover DLL from
+    an earlier version.
+
+    This deliberately does NOT copy into the Gale profile, unlike the shared template. The
+    deployed DLL there is hardlinked into Gale's cache of the published build and into other
+    profiles, so an in-place overwrite would silently rewrite those too; and Gale owns the folder
+    name (ryuka_labs-PerfectOils), so writing a second PerfectOils/ folder would leave two copies
+    of the same plugin GUID for BepInEx to choose between. Deploy for playtesting by deleting the
+    target file first, then copying.
+  -->
+  <Target Name="StageForThunderstore" AfterTargets="Build" Condition="'$(DeployToSulfurProfile)' == 'true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ThunderstoreDir)" />
+  </Target>
 </Project>

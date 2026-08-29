@@ -13,7 +13,7 @@ namespace PerfectOils
     {
         public const string PluginGuid = "com.ryuka.sulfur.perfectoils";
         public const string PluginName = "Perfect Oils";
-        public const string PluginVersion = "1.3.6";
+        public const string PluginVersion = "1.3.7";
 
         internal static Plugin Instance { get; private set; }
         internal static ManualLogSource Log { get; private set; }

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.7
+
+* Compatibility with SULFUR 0.19. The game made its open-stash inventory grids private, which broke the live re-apply introduced in 1.3.6. Changing a trait setting once again updates oiled weapons that are sitting in a storage chest you have opened this session, not just the ones you are carrying.
+* No gameplay or configuration changes. Existing settings files carry over untouched.
+
 ## 1.3.6
 
 * Added `RemoveNegativeMaxDurability`: oils that lower a weapon's maximum durability cap (for example -30% or a flat reduction) can now be suppressed. Positive max-durability bonuses are kept. Disabled by default.
