@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using BepInEx.Logging;
 using PerfectRandom.Sulfur.Core;
 using PerfectRandom.Sulfur.Core.CharacterStats;
@@ -23,13 +24,26 @@ namespace PerfectOils
     /// </summary>
     internal static class OilReapplyService
     {
+        private const string StashGridsFieldName = "StashInventoryItemGrids";
+
+        // SULFUR 0.19 made InventoryUI.StashInventoryItemGrids private. The public Stashes
+        // dictionary added in the same build is not an equivalent replacement: RegisterStash
+        // only records PlayerStash stations, while RegisterStashItemGrid is also called by the
+        // repair/showcase frame under its own identifier, and ClearCachedStashInventories
+        // empties the grid dictionary without touching Stashes. Reading the field keeps exactly
+        // the set of grids this service covered before. Public is included in the lookup so the
+        // field being made public again would not break it.
+        private static readonly FieldInfo StashGridsField = ResolveStashGridsField();
+
+        private static bool stashGridsFieldReported;
+
         internal static void ReapplyToLoadedItems(ManualLogSource log)
         {
             try
             {
                 var items = new HashSet<InventoryItem>();
                 CollectEquipped(items);
-                CollectInventory(items);
+                CollectInventory(items, log);
 
                 int rebuilt = 0;
                 foreach (InventoryItem item in items)
@@ -82,7 +96,7 @@ namespace PerfectOils
             }
         }
 
-        private static void CollectInventory(HashSet<InventoryItem> items)
+        private static void CollectInventory(HashSet<InventoryItem> items, ManualLogSource log)
         {
             UIManager uiManager = StaticInstance<UIManager>.Instance;
             if (uiManager == null || uiManager.InventoryUI == null)
@@ -108,7 +122,7 @@ namespace PerfectOils
             // stash; each opened stash grid is registered and its items become live, so any
             // currently loaded stash is rebuilt too. Equipping a weapon does not rebuild its
             // enchantment stats, so a stale stash weapon would otherwise keep old modifiers.
-            Dictionary<string, ItemGrid> stashes = inventoryUI.StashInventoryItemGrids;
+            Dictionary<string, ItemGrid> stashes = GetStashGrids(inventoryUI, log);
             if (stashes != null)
             {
                 foreach (KeyValuePair<string, ItemGrid> stash in stashes)
@@ -119,6 +133,40 @@ namespace PerfectOils
                     }
                 }
             }
+        }
+
+        private static FieldInfo ResolveStashGridsField()
+        {
+            FieldInfo field = typeof(InventoryUI).GetField(
+                StashGridsFieldName,
+                BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+
+            return field != null && field.FieldType == typeof(Dictionary<string, ItemGrid>)
+                ? field
+                : null;
+        }
+
+        private static Dictionary<string, ItemGrid> GetStashGrids(
+            InventoryUI inventoryUI, ManualLogSource log)
+        {
+            if (StashGridsField == null)
+            {
+                if (!stashGridsFieldReported)
+                {
+                    stashGridsFieldReported = true;
+                    if (log != null)
+                    {
+                        log.LogWarning(
+                            "[PerfectOils] InventoryUI." + StashGridsFieldName +
+                            " could not be resolved; oils on weapons in open storage chests " +
+                            "will not be re-applied when a setting changes.");
+                    }
+                }
+
+                return null;
+            }
+
+            return (Dictionary<string, ItemGrid>)StashGridsField.GetValue(inventoryUI);
         }
 
         private static void AddRange(HashSet<InventoryItem> items, List<InventoryItem> source)
